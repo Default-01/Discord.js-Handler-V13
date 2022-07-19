@@ -1,5 +1,5 @@
 module.exports = {
-    token: "",
-    prefix: "!",
-    guildId: ""
+	token: "",
+	prefix: "!",
+	guildId: ""
 }
