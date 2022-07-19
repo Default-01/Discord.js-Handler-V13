@@ -1,5 +1,5 @@
 module.exports = {
-    token: "your bot's token",
+    token: "",
     prefix: "!",
     guildId: ""
 }

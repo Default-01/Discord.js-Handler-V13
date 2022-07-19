@@ -2,6 +2,7 @@ const { glob } = require("glob");
 const { promisify } = require("util");
 const { Client } = require("discord.js");
 const config = require('../config');
+const term = require('terminal-kit').terminal;
 
 const globPromise = promisify(glob);
 
@@ -45,6 +46,8 @@ module.exports = async (client) => {
         await client.guilds.cache
             .get(config.guildId)
             .commands.set(arrayOfSlashCommands);
+
+        term(`[^G INFO^ ] Successfully registered ${arrayOfSlashCommands.length}\n`);
 
         // Register for all the guilds the bot is in
         // await client.application.commands.set(arrayOfSlashCommands);
