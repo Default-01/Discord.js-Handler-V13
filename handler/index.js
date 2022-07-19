@@ -47,7 +47,7 @@ module.exports = async (client) => {
             .get(config.guildId)
             .commands.set(arrayOfSlashCommands);
 
-        term(`[^G INFO^ ] Successfully registered ${arrayOfSlashCommands.length}\n`);
+        term(`[^G INFO^ ] Successfully registered ${arrayOfSlashCommands.length} slash commands\n`);
 
         // Register for all the guilds the bot is in
         // await client.application.commands.set(arrayOfSlashCommands);
